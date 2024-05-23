@@ -1,16 +1,24 @@
 h1 {
     text-align: center;
+    text-shadow: 2px 2px whitesmoke;
 }
 
 h2 {
     text-align: center;
-    margin: 5px
+    text-shadow: 2px 2px whitesmoke;
 }
 
 body {
     margin-left: 100px;
     margin-right: 100px;
+    background-color: lightgrey; 
 }
+
+p {
+    text-align: center;
+}
+
+
 
 .container {
     border: 2px solid #B0C4DE;
@@ -22,7 +30,7 @@ body {
 /* Colors panel */
 .color-panel {
     display: inline-block;
-    margin: 20px auto;
+    margin: 30px auto;
     text-align: center;
     width: 24%;
 }
@@ -60,5 +68,29 @@ body {
     width: 30%;
     text-align: center;
     margin-left: 15px;
+}
+
+.montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.oswald {
+    font-family: 'Oswald', sans-serif;
+}
+
+.open-sans {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.regular {
+    font-style: normal;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
 }
 

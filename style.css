@@ -1,38 +1,44 @@
-h1 {
-    text-align: center;
-    text-shadow: 2px 2px whitesmoke;
-}
-
-h2 {
-    text-align: center;
-    text-shadow: 2px 2px whitesmoke;
-}
-
+/* General styles */
 body {
-    margin-left: 100px;
-    margin-right: 100px;
+    margin: 0; /* Changed from margin-left: 100px; margin-right: 100px; to margin: 0 for better use of Flexbox for alignment */
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
     background-color: lightgrey; 
+}
+
+h1, h2 {
+    text-align: center;
+    text-shadow: 2px 2px whitesmoke;
 }
 
 p {
     text-align: center;
 }
 
-
-
 .container {
     border: 2px solid #B0C4DE;
     padding: 25px;
-    Margin: 16px;
-    
+    margin: 16px auto; /* Changed to margin: 16px auto to center the container */
+    width: 80%; /* Added width: 80% to keep the content within a defined width */
 }
 
 /* Colors panel */
+.color-design {
+    display: flex; /* Added display: flex for Flexbox layout */
+    justify-content: space-around; /* Added justify-content: space-around for even spacing */
+    flex-wrap: wrap; /* Added flex-wrap: wrap to allow wrapping of panels */
+}
+
 .color-panel {
-    display: inline-block;
-    margin: 30px auto;
+    background-color: lightgray;
+    margin: 15px; /* Changed margin from 30px auto to 15px for consistent spacing */
+    padding: 15px; /* Changed padding to 15px for consistent spacing */
+    width: 20%; /* Changed width to 20% for consistent panel size */
     text-align: center;
-    width: 24%;
+}
+
+.color-panel p {
+    margin: 10px 0; /* Added margin: 10px 0 for consistent spacing within panels */
 }
 
 .aquamarine {
@@ -62,14 +68,42 @@ p {
     margin: 1em;
 }
 
-/* Fonts Panel */
-.font-panel {
-    display: inline-block;
-    width: 30%;
-    text-align: center;
-    margin-left: 15px;
+/* Fonts panel */
+.font-design {
+    display: flex; /* Added display: flex for Flexbox layout */
+    justify-content: space-around; /* Added justify-content: space-around for even spacing */
+    flex-wrap: wrap; /* Added flex-wrap: wrap to allow wrapping of panels */
 }
 
+.font-panel {
+    width: 30%; /* Added width: 30% for consistent panel size */
+    text-align: center;
+}
+
+/* Text styles panel */
+.text-design {
+    display: flex; /* Added display: flex for Flexbox layout */
+    justify-content: space-around; /* Added justify-content: space-around for even spacing */
+    flex-wrap: wrap; /* Added flex-wrap: wrap to allow wrapping of panels */
+}
+
+.text-panel {
+    width: 30%; /* Added width: 30% for consistent panel size */
+}
+
+.text-panel p {
+    margin-top: 50px ;
+}
+
+.text-panel h2 {
+    margin-top: 35px;
+}
+
+.font-label {
+    text-decoration: underline;
+}
+
+/* Font families */
 .montserrat {
     font-family: 'Montserrat', sans-serif;
 }
@@ -82,6 +116,7 @@ p {
     font-family: 'Open Sans', sans-serif;
 }
 
+/* Font styles */
 .regular {
     font-style: normal;
 }
@@ -93,4 +128,3 @@ p {
 .italic {
     font-style: italic;
 }
-
